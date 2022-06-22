@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: spring-sensors-consumer-web
+  description: Spring Sensors - Consumer Web
+  tags:
+    - app-accelerator
+    - java
+    - spring
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=spring-sensors-consumer-web'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
